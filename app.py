@@ -40,6 +40,9 @@ m.add_child(folium.LatLngPopup())
 # Displaying the map
 map_data = st_folium(m, width=350, height=500)
 
+latitude = [30.3753]
+longitude = [69.3451]
+
 # Search bar for location
 location = st.text_input("Enter Location (e.g. Lahore, Islamabad, etc.)")
 geolocator = Nominatim(user_agent="weather_app")
